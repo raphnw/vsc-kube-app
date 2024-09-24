@@ -1,4 +1,3 @@
----
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -18,9 +17,8 @@ spec:
       containers:
         - name: vprodb
           image: vprofile/vprofiledb
-            #args:
-            #- "--ignore-db-dir"
-          #- "lost+found"
+          #          args:
+          #            - "--ingnore-db-dir=lost+found"
           volumeMounts:
             - mountPath: /var/lib/mysql
               name: vpro-db-data
