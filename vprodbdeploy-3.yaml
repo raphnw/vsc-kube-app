@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: vprodb
-          image: sonako2000/raf-vprofile-db
+          image: sonako2000/raf-vprofile-db:latest
           #         image: imranvisualpath/8amysql-db_1:V1
           #          args:
           #            - "--ingnore-db-dir=lost+found"
